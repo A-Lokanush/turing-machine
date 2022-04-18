@@ -28,36 +28,37 @@ int main(int argc, char* argv[]) {
         tape_i += temporary;
     }
 
+    cout<<"INPUT : "<< tape_i << "\t";
     switch (option) {
     case 0: {
         // unary to binary
-        unary_to_binary(tape_i,tape_o);
-        break;
+        cout<<"CHOSEN OPTION 0 : Unary to Binary\n";
+        unary_to_binary(tape_i,tape_o); break;
     }
     case 1: {
         // binary to unary
-        binary_to_unary(tape_i, tape_o);
-        break;
+        cout<<"CHOSEN OPTION 1 : Binary to Unary\n";
+        binary_to_unary(tape_i, tape_o); break;
     }
     case 2: {
         // binary to decimal
-        binary_to_decimal(tape_i, tape_o);
-        break;
+        cout<<"CHOSEN OPTION 2 : Binary to Decimal\n";
+        binary_to_decimal(tape_i, tape_o); break;
     }
     case 3: {
         // decimal to binary
-        decimal_to_binary(tape_i, tape_o);
-        break;
+        cout<<"CHOSEN OPTION 3 : Decimal to Binary\n";
+        decimal_to_binary(tape_i, tape_o); break;
     }
     case 4: {
         // decimal to hexa
-        decimal_to_hexa(tape_i, tape_o);
-        break;
+        cout<<"CHOSEN OPTION 4 : Decimal to Hexa\n";
+        decimal_to_hexa(tape_i, tape_o); break;
     }
     case 5: {
         // hexa to decimal
-        hexa_to_decimal(tape_i, tape_o);
-        break;
+        cout<<"CHOSEN OPTION 5 : Hexa to Decimal\n";
+        hexa_to_decimal(tape_i, tape_o); break;
     }
     }
 }
